@@ -113,8 +113,21 @@
               "devServerTarget": "dnd:serve:production"
             }
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
-    }},
-  "defaultProject": "dnd"
+    }
+  },
+  "defaultProject": "dnd",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
