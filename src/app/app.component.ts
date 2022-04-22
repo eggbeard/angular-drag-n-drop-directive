@@ -6,7 +6,7 @@ import { Component, ViewChild, ElementRef } from "@angular/core";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  @ViewChild("fileDropRef", { static: false }) fileDropEl: ElementRef;
+  @ViewChild("fileDropRef") fileDropEl: ElementRef;
   files: any[] = [];
 
   /**
